@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
         _controller = GetComponent<CharacterController>();
         _mCamera = GameMaster.mainCamera;
         _mCamera.transform.SetParent(transform);
-        _mCamera.transform.localPosition = new Vector3(0, 2, 0);
+        _mCamera.transform.localPosition = new Vector3(0, 0, 0);
         _mCamera.transform.localRotation = Quaternion.Euler(30, 40, 0);
         Settings.visibleCursor = false;
     }

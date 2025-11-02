@@ -11,7 +11,7 @@ public class ExtensionCamera : MonoBehaviour
     void Awake()
     {
         cam = GameMaster.mainCamera;
-        initialLocalPos = cam.transform.localPosition;
+        initialLocalPos = Vector3.zero;
         targetZoom = cam.orthographic ? cam.orthographicSize : cam.fieldOfView;
     }
 
